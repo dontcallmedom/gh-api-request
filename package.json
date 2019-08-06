@@ -1,0 +1,9 @@
+{
+	"name": "gh-api-request",
+	"description": "Wrapper to Github API v3 to manage a request of queue that deals with rate limitations",
+	"dependencies": {
+		"parse-link-header": "^1.0.1",
+		"promise-queue": "^2.2.5",
+		"request": "^2.88.0"
+	}
+}
