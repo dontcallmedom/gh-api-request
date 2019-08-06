@@ -12,11 +12,12 @@ const ghrequest = require('gh-api-request');
 ghrequest.ghToken = 'foobar'; // Set to your Github API token
 
 // Optional
-ghrequest.userAgent = 'My User Agent https://example.com'; // defaults to Node Github API Request queue https://github.com/dontcallmedom/gh-api-request/
+// defaults to 'Node Github API Request queue https://github.com/dontcallmedom/gh-api-request/'
+ghrequest.userAgent = 'My User Agent https://example.com';
 
 request('https://api.github.com/user/issues')
        .then(issues =>
           /* all issues of the user, even if paged */
-          console.log(JSON.stringify(issues, null, 2)
+          console.log(JSON.stringify(issues, null, 2))
         );
 ```
